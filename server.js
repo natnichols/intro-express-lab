@@ -22,6 +22,12 @@ app.get('/home', function(req, res) {
   res.render('home')
 })
 
+app.get('/sports', function(req, res) {
+  res.render('sports/index', {
+    sports: sports
+  })
+})
+
 // tell the app to listen on port 3000
 app.listen(3000, function() {
   console.log('Mulder, port 3000 is listening')
