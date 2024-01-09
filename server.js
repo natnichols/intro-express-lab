@@ -1,4 +1,4 @@
-// import mdoules
+// import modules
 import express from 'express'
 import {sports} from './data/sports-data.js'
 
@@ -15,7 +15,7 @@ app.set('view engine', 'ejs')
 
 // mount routes
 app.get('/', function(req, res) {
-  res.send(`<h1>Mulder, it's me</h1>`)
+  res.redirect('/home')
 })
 
 app.get('/home', function(req, res) {
