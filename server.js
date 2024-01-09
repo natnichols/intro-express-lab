@@ -1,5 +1,6 @@
 // import mdoules
 import express from 'express'
+import {sports} from './data/sports-data.js'
 
 // create Express app
 const app = express()
